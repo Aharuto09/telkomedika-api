@@ -10,7 +10,7 @@ import java.net.URISyntaxException;
 @RestController
 @RequestMapping("/agenda")
 public class agendaController {
-    URI uri = new URI("http://knybby-fx505dt:8081/agenda");
+    URI uri = new URI("https://agenda-telkomedika-production.up.railway.app/agenda");
 
     RestTemplate restTemplate = new RestTemplate();
 
