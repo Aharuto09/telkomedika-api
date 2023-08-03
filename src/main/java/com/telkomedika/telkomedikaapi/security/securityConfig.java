@@ -27,7 +27,7 @@ public class securityConfig {
                 .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/auth/**")
                 .permitAll()
-                .requestMatchers("/Acc/all")
+                        .requestMatchers("/agenda/**")
                 .permitAll()
                 .requestMatchers("/Acc/update/**").hasAnyRole(ADMIN.name())
                         .requestMatchers("/Acc/upgrade/**").hasAnyRole(ADMIN.name())
