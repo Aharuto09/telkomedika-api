@@ -69,7 +69,7 @@ public class accountServiceImpl implements accountService {
 
     @Override
     public void deleteAccount(int id) {
-
+        accountRepo.deleteById(id);
     }
 
     @Override
