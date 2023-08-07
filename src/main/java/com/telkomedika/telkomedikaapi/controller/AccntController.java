@@ -34,7 +34,7 @@ public class AccntController {
     public accountEntity upgradeAccount(@PathVariable("id") int id){
         return accountservice.upgradeAccount(id);
     }
-    @DeleteMapping("{id}")
+    @DeleteMapping("delete/{id}")
     public void deleteAccount(@PathVariable("id") int id){
         accountservice.deleteAccount(id);
     }
