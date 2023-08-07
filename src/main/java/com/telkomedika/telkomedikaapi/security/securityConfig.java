@@ -33,6 +33,7 @@ public class securityConfig {
                 // .permitAll()
                 .requestMatchers("/Acc/update/**").hasAnyRole(ADMIN.name())
                 .requestMatchers("/Acc/upgrade/**").hasAnyRole(ADMIN.name())
+                .requestMatchers("/Acc/delete/**").hasAnyRole(ADMIN.name())
                 .anyRequest()
                 .authenticated());
         http
