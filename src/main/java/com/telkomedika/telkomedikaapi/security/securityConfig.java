@@ -29,10 +29,10 @@ public class securityConfig {
                 .permitAll()
                 .requestMatchers("/agenda/**")
                 .permitAll()
-                .requestMatchers("/Acc/all")
-                .permitAll()
+                // .requestMatchers("/Acc/all")
+                // .permitAll()
                 .requestMatchers("/Acc/update/**").hasAnyRole(ADMIN.name())
-                        .requestMatchers("/Acc/upgrade/**").hasAnyRole(ADMIN.name())
+                .requestMatchers("/Acc/upgrade/**").hasAnyRole(ADMIN.name())
                 .anyRequest()
                 .authenticated());
         http
