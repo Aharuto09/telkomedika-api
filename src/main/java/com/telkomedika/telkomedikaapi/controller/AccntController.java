@@ -34,6 +34,10 @@ public class AccntController {
     public accountEntity upgradeAccount(@PathVariable("id") int id){
         return accountservice.upgradeAccount(id);
     }
+    // @PostMapping("/add")
+    // public accountEntity addAccount(@PathVariable("id") int id){
+    //     return accountservice.addAccount(id);
+    // }
     @DeleteMapping("delete/{id}")
     public void deleteAccount(@PathVariable("id") int id){
         accountservice.deleteAccount(id);
